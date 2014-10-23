@@ -19,7 +19,6 @@ function file_backup {
 
 	echo 'File Backup --- building tar File...'
 	tar -cf $backupfile ../wp*
-	echo '+DONE'
 }
 
 
@@ -34,3 +33,4 @@ cd $backupdir
 
 db_backup
 file_backup
+echo '+DONE'
